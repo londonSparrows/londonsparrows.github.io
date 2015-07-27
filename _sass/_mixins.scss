@@ -1,0 +1,47 @@
+@mixin clearfix () {
+	&:before,
+	&:after {
+		content: ' ';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin title{
+	// the title at the top of the page
+    font-weight: 500;
+    text-shadow: 1px 1px #5d5d5d;
+}
+
+@mixin background{
+	// the image container at the top of the page
+    background-image: url("../imgs/img-loading.gif");
+    background-color: $black;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    img{
+      display: inline;
+    }
+}
+
+@mixin respond-min ($media) {
+	@if $media == palm {
+		@media only screen and (min-width: $break-palm) { @content; }
+	} @else if $media == lap {
+		@media only screen and (min-width: $break-lap) { @content; }
+	} @else if $media == portable {
+		@media only screen and (min-width: $break-portable) { @content; }
+	} @else if $media == portable-plus-one {
+		@media only screen and (min-width: 1025px) { @content; }
+	} @else if $media == desk {
+		@media only screen and (min-width: $break-desk) { @content; }
+	} @else {
+		@media only screen and (min-width: $media) { @content; }
+	}
+}

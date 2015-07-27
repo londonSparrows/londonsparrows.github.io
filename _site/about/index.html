@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<title>London Sparrows</title>
+<meta name="description" content="One of Londons finest wheelchair basketball teams">
+<meta name="keywords" content="London Wheelchair Basketball, London WBC, Hackney WBC, Hackney Wheelchair Basketball, Wheelchair Basketball, London wheelchair basketball club, london wheelchair basketball clubs, paraolympic wheelchair basketball">
+<meta name="author" content="Fred Kingham">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<link href="../assets/css/main.css" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<script>
+function lazyLoad(src, mini_src){
+    var update = function(){
+
+            var pic = $("body").width() > 400 ? src : mini_src;
+            $("img.lazy").load(function() {
+                $(this).addClass("revealed");
+            }).attr('src', pic);
+    }
+
+    $(window).load(function(){
+            update();
+    });
+
+    $(window).resize(function () {
+            update();
+    });
+}
+</script>
+
+<style>
+/* Regular */
+@font-face {
+    font-family: 'League Gothic Italic';
+    src: url('/assets/fonts/leaguegothic-italic-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+/* Italic */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('/assets/fonts/leaguegothic-regular-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Condensed */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('/assets/fonts/leaguegothic-condensed-regular-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed Italic */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('/assets/fonts/leaguegothic-condensed-italic-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+</style>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+  <nav class="main-nav">
+  <ul>
+  <li><a  href="/"><h4>Home</h4></a></li>
+  <li><a  href="/training/"><h4>Training</h4></a></li>
+  <li><a class="selected" href="/about/"><h4>About</h4></a></li>
+  <li><a  href="/donate/"><h4>Donate</h4></a></li>
+  </ul>
+  <a class="nav-hamburger" id="revealMenu"></a>
+  </nav>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="other-page-background">
+	<img class="lazy">
+    <h1 class="other-page-title white">About</h1>
+</div>
+<div class="section grid grid--center ">
+	<div class="column-container">
+		<div class="column perf-border">
+				<h3 class="sub-header">The Sparrows</h3>
+				<p>
+				London Sparrows is the oldest WBC in London and one of the best. Our team has both male and female players of many different backgrounds and abilities. Juniors and new starters benefit from playing alongside some of the people who first played wheelchair basketball in the UK.
+				</p>
+				<p>
+				We're committed to providing an environment for people from all backgrounds to learn and play wheelchair basketball. Although most of our players are disabled, the Sparrows don't have a minimum disability requirement and able-bodied people are welcome to try it out.
+				</p>
+				<div class="contact-container">
+					<div class="contact">
+						if you'd like to know more contact <a href="mailto:hacksparrows@hotmail.com">Fred</a> or
+						<a href="/training">come down</a> to a training session and give it a go
+					</div>
+				</div>
+			</div><!--
+			--><div class="column">
+				<h3 class="sub-header">Wheelchair Basketball</h3>
+				<p>
+				Wheelchair basketball is the most popular disability sport in the world, with over a hundred clubs in the UK alone.
+				</p>
+
+				<p>
+				The sport evolved during the 1940s when it was used in the rehabilitation of injured veterans and other disabled people in Britain and the USA. Wheelchair basketball will have reached most Brits' attention during the 2012 London Paralympic Games.
+				</p>
+
+				<p>
+				The sport has similar rules to able-bodied basketball, but the addition of specialised sports wheelchairs adds a new dimension of strategies and tactics. Find out more at British Wheelchair Basketball (<a href="http://www.gbwba.org.uk/gbwba/index.cfm">www.gbwba.org.uk</a>).
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src='http://maps.googleapis.com/maps/api/js?key=AIzaSyD1kz73psIIa6EfAX5r9jA4NS09sICMFtU&sensor=true'></script>
+
+<script>
+lazyLoad("/assets/imgs/about.jpg", "/assets/imgs/about-mini.jpg");
+</script>
+
+      </div>
+    </div>
+
+    <script>
+$("a#revealMenu").click(function(x){
+    x.preventDefault();
+    $(".main-nav").toggleClass("show");
+})
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42884873-1', 'hackneysparrows.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </body>
+
+</html>

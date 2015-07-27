@@ -1,0 +1,38 @@
+html,
+body,
+button span {
+	-webkit-font-smoothing: antialiased;
+}
+
+html{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+}
+
+a, a:visited{
+	text-decoration: none;
+	color: $highlighted;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+p{
+	line-height: 1.5em;
+	margin-bottom: $paragraph-spacing;
+}
+
+.no-padding{
+	// padding: 0;
+}

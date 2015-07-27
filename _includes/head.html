@@ -1,0 +1,90 @@
+<head>
+<title>London Sparrows</title>
+<meta name="description" content="One of Londons finest wheelchair basketball teams">
+<meta name="keywords" content="London Wheelchair Basketball, London WBC, Hackney WBC, Hackney Wheelchair Basketball, Wheelchair Basketball, London wheelchair basketball club, london wheelchair basketball clubs, paraolympic wheelchair basketball">
+<meta name="author" content="Fred Kingham">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{% if page.url == '/index.html' %}
+<link href="assets/css/main.css" rel="stylesheet">
+{% else %}
+<link href="../assets/css/main.css" rel="stylesheet">
+{% endif %}
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<script>
+function lazyLoad(src, mini_src){
+    var update = function(){
+
+            var pic = $("body").width() > 400 ? src : mini_src;
+            $("img.lazy").load(function() {
+                $(this).addClass("revealed");
+            }).attr('src', pic);
+    }
+
+    $(window).load(function(){
+            update();
+    });
+
+    $(window).resize(function () {
+            update();
+    });
+}
+</script>
+
+<style>
+/* Regular */
+@font-face {
+    font-family: 'League Gothic Italic';
+    src: url('/assets/fonts/leaguegothic-italic-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+/* Italic */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('/assets/fonts/leaguegothic-regular-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Condensed */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('/assets/fonts/leaguegothic-condensed-regular-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed Italic */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('/assets/fonts/leaguegothic-condensed-italic-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+</style>
+
+</head>

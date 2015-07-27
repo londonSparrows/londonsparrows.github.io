@@ -1,0 +1,12 @@
+<header class="site-header">
+  <nav class="main-nav">
+  <ul>
+  <li><a {% if page.url == '/index.html' %}class="selected"{% endif %} href="/"><h4>Home</h4></a></li>
+  <li><a {% if page.url == '/training/index.html' %}class="selected"{% endif %} href="/training/"><h4>Training</h4></a></li>
+  <li><a {% if page.url == '/about/index.html' %}class="selected"{% endif %} href="/about/"><h4>About</h4></a></li>
+  <li><a {% if page.url == '/donate/index.html' %}class="selected"{% endif %} href="/donate/"><h4>Donate</h4></a></li>
+  </ul>
+  <a class="nav-hamburger" id="revealMenu"></a>
+  </nav>
+
+</header>

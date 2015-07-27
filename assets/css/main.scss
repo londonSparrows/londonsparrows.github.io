@@ -1,0 +1,127 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "reset";
+@import "vars";
+@import "mixins";
+$push: true;
+$pull: true;
+$breakpoints: (
+    'palm' '(max-width: 480px)',
+    'lap' '(min-width: 481px) and (max-width: 1023px)',
+    'portable' '(max-width: 1023px)',
+    'desk' '(min-width: 1024px)',
+    'not-palm' '(min-width: 480px)'
+);
+
+@import "csswizardry-grids";
+@import "typography";
+@import "base";
+@import "nav";
+@import "pages/home";
+@import "pages/training";
+
+
+
+.site-header{
+    background-color: $black;
+}
+
+.top-overlay{
+    height: 500px;
+}
+
+.home-background{
+    @include background;
+    height: $home-page-hero-height-spacing;
+}
+
+.other-page-background{
+    @include background;
+    height: $other-page-hero-height;
+}
+
+.lazy{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+}
+
+.lazy.revealed{
+    opacity: 1;
+}
+
+.column-container{
+    margin-top: 2.5em;
+    @extend .grid__item;
+    @extend .ten-twelfths;
+    @extend .palm--one-whole;
+    @extend .grid;
+    @extend .grid--center;
+
+    .column{
+        @extend .grid__item;
+        @extend .one-half;
+        @extend .palm--one-whole;
+
+        @include grid-media-query(not-palm){
+            padding-left: 8.333%;
+            padding-right: 8.333%;
+        }
+    }
+
+    @include grid-media-query(not-palm){
+        margin-bottom: 2.5em;
+    }
+}
+
+
+.home-title{
+    text-transform: uppercase;
+    @include title;
+    font-size: 7em;
+    bottom: 10%;
+    right: 10%;
+    position: absolute;
+    position: absolute;
+    z-index: 10;
+}
+
+.other-page-title{
+    @include title;
+    font-size: 5em;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.perf-border{
+  @include grid-media-query(not-palm){
+      border-right: 1px dashed rgba(100,100,100,0.2);
+  }
+}
+
+.demo-block{
+    background-color: pink;
+}
+
+.contact-container{
+	margin-top: 40px;
+	@include clearfix;
+	margin-bottom: 20px;
+}
+
+.contact{
+	float: right;
+    text-align: right;
+}
+
+.section{
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}

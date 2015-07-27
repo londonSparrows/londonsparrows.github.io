@@ -1,0 +1,23 @@
+{
+  "name": "sparrows",
+  "version": "0.0.0",
+  "authors": [
+    "fredkingham <fred@potatolondon.com>"
+  ],
+  "description": "website for LondonSparrows.com",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "csswizardry-grids": "~2.2.0",
+    "html5-boilerplate": "~5.2.0"
+  }
+}

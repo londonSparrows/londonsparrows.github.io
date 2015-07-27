@@ -1,0 +1,59 @@
+---
+layout: default
+title: Training
+id: training
+active: active
+---
+
+<div class="training-page-background">
+	<div id="mapCanvas"></div>
+	<div class="dark-bg-overlay"></div>
+    <h1 class="other-page-title white">Training</h1>
+</div>
+<div class="section grid grid--center">
+	<div class="column-container">
+		<div class="column perf-border">
+			<h3 class="sub-header">When</h3>
+			<p>
+			We train twice a week, Fridays 19:00-21:00 and Saturdays 16:00-18:00 and we welcome new players. If one of the teams has a match then training will be cancelled. Matches happen during the season (September-May), see our fixtures for more infomation. Come down to see a match if you can, its a great sport to watch
+			</p>
+			<p>
+			Training doesn't happen in August when we take well deserved R&R before the season starts anew
+			Regular attendees need to pay 10 pounds a month which is outstanding value, but if you just want to try it out, it's free!
+			</p>
+			<div class="contact-container">
+				<div class="contact">
+					<a href="mailto:hacksparrows@hotmail.com">Contact Us</a>
+					if you'd like to know more
+				</div>
+			</div>
+		</div><!--
+		--><div class="column">
+			<h3 class="sub-header">Where</h3>
+			<p>
+				We train at <a href="http://www.hackneysportscentre.com/">Space</a> (<a href="https://maps.google.co.uk/maps?q=31+Falkirk+Street&amp;hl=en&amp;sll=51.528642,-0.101599&amp;sspn=0.492113,1.212616&amp;hnear=31+Falkirk+St,+London+N1+6SD,+United+Kingdom&amp;t=m&amp;z=16">here</a>) one of the best basketball courts in London and a venue during the paraolympic games.
+				Its very close to Hoxton Station which also happens to be wheelchair accessible for anyone coming on the East London line.
+			</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src='http://maps.googleapis.com/maps/api/js?key=AIzaSyD1kz73psIIa6EfAX5r9jA4NS09sICMFtU&sensor=true'></script>
+
+<script>
+    $(window).load(function(){
+      var latlng = new google.maps.LatLng(51.531058341660334, -0.07913705344231303);
+      var myOptions = {
+        zoom: 16,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+		scrollwheel: false,
+	    navigationControl: false,
+	    mapTypeControl: false,
+	    scaleControl: false,
+	    draggable: false,
+		disableDefaultUI: true
+      };
+      var map = new google.maps.Map(document.getElementById("mapCanvas"), myOptions);
+});
+</script>

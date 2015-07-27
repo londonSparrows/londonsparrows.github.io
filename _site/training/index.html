@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<title>London Sparrows</title>
+<meta name="description" content="One of Londons finest wheelchair basketball teams">
+<meta name="keywords" content="London Wheelchair Basketball, London WBC, Hackney WBC, Hackney Wheelchair Basketball, Wheelchair Basketball, London wheelchair basketball club, london wheelchair basketball clubs, paraolympic wheelchair basketball">
+<meta name="author" content="Fred Kingham">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<link href="../assets/css/main.css" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<script>
+function lazyLoad(src, mini_src){
+    var update = function(){
+
+            var pic = $("body").width() > 400 ? src : mini_src;
+            $("img.lazy").load(function() {
+                $(this).addClass("revealed");
+            }).attr('src', pic);
+    }
+
+    $(window).load(function(){
+            update();
+    });
+
+    $(window).resize(function () {
+            update();
+    });
+}
+</script>
+
+<style>
+/* Regular */
+@font-face {
+    font-family: 'League Gothic Italic';
+    src: url('/assets/fonts/leaguegothic-italic-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+/* Italic */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('/assets/fonts/leaguegothic-regular-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Condensed */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('/assets/fonts/leaguegothic-condensed-regular-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed Italic */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('/assets/fonts/leaguegothic-condensed-italic-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+</style>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+  <nav class="main-nav">
+  <ul>
+  <li><a  href="/"><h4>Home</h4></a></li>
+  <li><a class="selected" href="/training/"><h4>Training</h4></a></li>
+  <li><a  href="/about/"><h4>About</h4></a></li>
+  <li><a  href="/donate/"><h4>Donate</h4></a></li>
+  </ul>
+  <a class="nav-hamburger" id="revealMenu"></a>
+  </nav>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="training-page-background">
+	<div id="mapCanvas"></div>
+	<div class="dark-bg-overlay"></div>
+    <h1 class="other-page-title white">Training</h1>
+</div>
+<div class="section grid grid--center">
+	<div class="column-container">
+		<div class="column perf-border">
+			<h3 class="sub-header">When</h3>
+			<p>
+			We train twice a week, Fridays 19:00-21:00 and Saturdays 16:00-18:00 and we welcome new players. If one of the teams has a match then training will be cancelled. Matches happen during the season (September-May), see our fixtures for more infomation. Come down to see a match if you can, its a great sport to watch
+			</p>
+			<p>
+			Training doesn't happen in August when we take well deserved R&R before the season starts anew
+			Regular attendees need to pay 10 pounds a month which is outstanding value, but if you just want to try it out, it's free!
+			</p>
+			<div class="contact-container">
+				<div class="contact">
+					<a href="mailto:hacksparrows@hotmail.com">Contact Us</a>
+					if you'd like to know more
+				</div>
+			</div>
+		</div><!--
+		--><div class="column">
+			<h3 class="sub-header">Where</h3>
+			<p>
+				We train at <a href="http://www.hackneysportscentre.com/">Space</a> (<a href="https://maps.google.co.uk/maps?q=31+Falkirk+Street&amp;hl=en&amp;sll=51.528642,-0.101599&amp;sspn=0.492113,1.212616&amp;hnear=31+Falkirk+St,+London+N1+6SD,+United+Kingdom&amp;t=m&amp;z=16">here</a>) one of the best basketball courts in London and a venue during the paraolympic games.
+				Its very close to Hoxton Station which also happens to be wheelchair accessible for anyone coming on the East London line.
+			</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src='http://maps.googleapis.com/maps/api/js?key=AIzaSyD1kz73psIIa6EfAX5r9jA4NS09sICMFtU&sensor=true'></script>
+
+<script>
+    $(window).load(function(){
+      var latlng = new google.maps.LatLng(51.531058341660334, -0.07913705344231303);
+      var myOptions = {
+        zoom: 16,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+		scrollwheel: false,
+	    navigationControl: false,
+	    mapTypeControl: false,
+	    scaleControl: false,
+	    draggable: false,
+		disableDefaultUI: true
+      };
+      var map = new google.maps.Map(document.getElementById("mapCanvas"), myOptions);
+});
+</script>
+
+      </div>
+    </div>
+
+    <script>
+$("a#revealMenu").click(function(x){
+    x.preventDefault();
+    $(".main-nav").toggleClass("show");
+})
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42884873-1', 'hackneysparrows.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </body>
+
+</html>

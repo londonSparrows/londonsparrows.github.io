@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<title>London Sparrows</title>
+<meta name="description" content="One of Londons finest wheelchair basketball teams">
+<meta name="keywords" content="London Wheelchair Basketball, London WBC, Hackney WBC, Hackney Wheelchair Basketball, Wheelchair Basketball, London wheelchair basketball club, london wheelchair basketball clubs, paraolympic wheelchair basketball">
+<meta name="author" content="Fred Kingham">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<link href="../assets/css/main.css" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<script>
+function lazyLoad(src, mini_src){
+    var update = function(){
+
+            var pic = $("body").width() > 400 ? src : mini_src;
+            $("img.lazy").load(function() {
+                $(this).addClass("revealed");
+            }).attr('src', pic);
+    }
+
+    $(window).load(function(){
+            update();
+    });
+
+    $(window).resize(function () {
+            update();
+    });
+}
+</script>
+
+<style>
+/* Regular */
+@font-face {
+    font-family: 'League Gothic Italic';
+    src: url('/assets/fonts/leaguegothic-italic-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+/* Italic */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('/assets/fonts/leaguegothic-regular-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Condensed */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('/assets/fonts/leaguegothic-condensed-regular-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed Italic */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('/assets/fonts/leaguegothic-condensed-italic-webfont.eot');
+    src: url('/assets/fonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+</style>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+  <nav class="main-nav">
+  <ul>
+  <li><a  href="/"><h4>Home</h4></a></li>
+  <li><a  href="/training/"><h4>Training</h4></a></li>
+  <li><a  href="/about/"><h4>About</h4></a></li>
+  <li><a class="selected" href="/donate/"><h4>Donate</h4></a></li>
+  </ul>
+  <a class="nav-hamburger" id="revealMenu"></a>
+  </nav>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="other-page-background">
+	<img class="lazy">
+    <h1 class="other-page-title white">Donate</h1>
+</div>
+<div class="section grid grid--center">
+	<div class="grid__item one-half">
+		<p>
+		The Sparrows are committed to creating an environment where people from all backgrounds can benefit from the focus and rigour that wheelchair basketball provides.
+		</p>
+		<p>
+		We have a history of mentoring juniors and the recently injured, to give them focus and direction. Over the years we have built up relationships with schools and hospitals where we find the people who can really benefit the most from the sport.
+		</p>
+		<p>
+		All this however takes money. From new chairs to transporting juniors to and from games. Wheelchair basketball is an expensive sport and although we focus on getting the most out of all the money donated, the more we have the more players we are able to support and the greater impact we can have.
+		</p>
+		<p>
+		We are also lucky to have a number of volunteers that help out with the chairs and some of our more disabled players. If you'd like to come down and help please contact <a href="mailto:hacksparrows@hotmail.com">Fred</a>
+		</p>
+		<h2><a href="mailto:hacksparrows@hotmail.com">Donate</a></h2>
+	</div>
+</div>
+
+<script type="text/javascript" src='http://maps.googleapis.com/maps/api/js?key=AIzaSyD1kz73psIIa6EfAX5r9jA4NS09sICMFtU&sensor=true'></script>
+
+<script>
+lazyLoad("/assets/imgs/donate.jpg", "/assets/imgs/donate-mini.jpg");
+</script>
+
+      </div>
+    </div>
+
+    <script>
+$("a#revealMenu").click(function(x){
+    x.preventDefault();
+    $(".main-nav").toggleClass("show");
+})
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42884873-1', 'hackneysparrows.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </body>
+
+</html>
